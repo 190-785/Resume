@@ -1,11 +1,11 @@
 %-------------------------
-% Full-Stack Resume for Yash Agarwal (Revised)
+% Back-End Resume for Yash Agarwal (Final Adjustments)
 %-------------------------
 \documentclass[letterpaper,11pt]{article}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref} % hidelinks for a clean look, links are still clickable
+\usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \input{glyphtounicode}
 \pagestyle{fancy}\fancyhf{}\renewcommand{\headrulewidth}{0pt}
@@ -18,15 +18,15 @@
 %--- Commands ---
 \newcommand{\resumeItem}[1]{\item\small{#1\vspace{-2pt}}}
 \newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item
-  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-    \textbf{#1} & #2\\
-    \textit{\small#3} & \textit{\small#4}\\
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small#4} \\
   \end{tabular*}\vspace{-7pt}}
-% Modified resumeProjectHeading to consistently use "Live Demo" for project links
-\newcommand{\resumeProjectHeading}[2]{\item
-  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-    \textbf{#1} & \href{#2}{Live Demo} \\
-  \end{tabular*}\vspace{-5pt}}
+\newcommand{\resumeProjectHeading}[3]{\vspace{-2pt}\item
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \href{#1}{\textbf{#2}} & {\small #3} \\
+  \end{tabular*}\vspace{-5pt}
+}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in,label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
@@ -38,7 +38,9 @@
 \begin{center}
   \textbf{\Huge \scshape Yash Agarwal}\\
   \small
-  \href{mailto:190e785@gmail.com}{190e785@gmail.com} \textbar\ +91-90276-01476 \textbar\ \href{<LinkedIn_URL>}{LinkedIn} \textbar\ \href{<GitHub_URL>}{GitHub}
+  \href{mailto:190e785@gmail.com}{190e785@gmail.com} \textbar\ +91-90276-01476 \textbar\ 
+  \href{https://in.linkedin.com/in/yash-agarwal-190e785}{LinkedIn} \textbar\ 
+  \href{https://github.com/190-785}{GitHub}
 \end{center}
 
 %--- Education ---
@@ -46,42 +48,31 @@
 \resumeSubHeadingListStart
   \resumeSubheading
     {Graphic Era Hill University}{Uttarakhand, India}
-    {B.Tech, CSE (Honors in ML \& AI)}{Aug 2023 -- Jul 2027}
+    {Bachelor of Technology in Computer Science \& Engineering (Honors in ML \& AI)}{August 2023 -- July 2027}
 \resumeSubHeadingListEnd
 
 %--- Projects ---
 \section{Projects}
 \resumeSubHeadingListStart
 
-  % Interactive Resume Maker (Frontend)
-  \resumeProjectHeading{Interactive Resume Maker}{<Interactive_Resume_Maker_URL>}
+  % Interactive Resume Maker
+  \resumeProjectHeading
+    {https://github.com/190-785/Interactive_Resume_Maker}{Interactive Resume Maker Backend}{March 2025 -- Present}
   \resumeItemListStart
-    \resumeItem{Developed a dynamic résumé editor with React and Tailwind CSS, enabling real-time section edits.}
-    \resumeItem{Integrated serverless PDF export via Puppeteer, ensuring high-fidelity document generation.}
-    \resumeItem{Implemented drag-and-drop section reordering and theme customization for user flexibility.}
-    \resumeItem{Conducted usability testing and iterated UI to meet ARIA accessibility standards.}
-    \resumeItem{Documented API endpoints and component library usage for future contributions.}
+    \resumeItem{Developed API in Node.js \& Express to support a collaborative resume editor, which demonstrates full-stack proficiency.}
+    \resumeItem{Implemented robust API security and authentication using JWT and Passport.js.}
+    \resumeItem{Secured data storage in Firestore and enforced role-based access controls.}
+    \resumeItem{Automated PDF rendering via Puppeteer in CI/CD pipelines on Vercel.}
   \resumeItemListEnd
 
-  % First Link Rule Frontend
-  \resumeProjectHeading{First Link Rule Frontend}{<First_Link_Frontend_URL>}
+  % First Link Backend
+  \resumeProjectHeading
+    {https://github.com/190-785/First_Link_Backend}{First Link Backend}{August 2024 -- Present}
   \resumeItemListStart
-    \resumeItem{Built a Vue.js application to visualize Wikipedia first-link traversals toward \textit{"Philosophy"}.}
-    \resumeItem{Rendered interactive SVG graphs and provided search/filter to inspect link paths.}
-    \resumeItem{Optimized performance using code splitting and lazy loading, reducing initial payload by 40\%.}
-    \resumeItem{Shared design tokens and component guidelines in a published style guide.}
-    \resumeItem{Collaborated with backend team to integrate REST endpoints for real-time updates.}
-  \resumeItemListEnd
-
-  % First Link Backend (merged with relevant details)
-  \resumeProjectHeading{First Link Backend}{<First_Link_Backend_URL>}
-  \resumeItemListStart
-    \resumeItem{Designed RESTful API with Node.js \& Express to retrieve Wikipedia first-link traversals, converting scraper from Selenium to BeautifulSoup for environment constraints.}
-    \resumeItem{Stored graph data in MongoDB and implemented Redis caching for performance.}
-    \resumeItem{Secured endpoints via JWT authentication and rate limiting for abuse prevention.}
-    \resumeItem{Containerized service with Docker and established CI/CD pipeline for automated deployments to AWS Lambda behind API Gateway, achieving on-demand scalability.}
-    \resumeItem{Monitored performance and logs via Render.com and Grafana dashboards.}
-    \resumeItem{Wrote comprehensive API documentation, integrated Swagger UI for developers, and ensured API contract consistency with the frontend team.}
+    \resumeItem{Created RESTful API in Node.js \& Express to retrieve Wikipedia first-link sequences via efficient BeautifulSoup scraping.}
+    \resumeItem{Stored traversal graphs in MongoDB and applied Redis caching for efficient data retrieval.}
+    \resumeItem{Containerized with Docker and deployed to AWS Lambda behind API Gateway for scalable hosting.}
+    \resumeItem{Monitored performance using Grafana dashboards on Render.com.}
   \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -90,14 +81,11 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in,label={}]
   \small{\item{
-    \textbf{Frontend:} React, Vue.js, Vite, Tailwind CSS, HTML5, CSS3, ES6\\
-    \textbf{State Mgmt:} Redux, Vuex, Context API\\
-    \textbf{Backend:} Node.js, Express, Flask, FastAPI, RESTful APIs\\
+    \textbf{Backend:} Node.js, Express, Flask, FastAPI, RESTful API design, API Security, Authentication\\
     \textbf{Databases:} MongoDB, PostgreSQL, Redis\\
-    \textbf{DevOps:} Docker, AWS Lambda, API Gateway, CI/CD (GitHub Actions), Vercel, Webpack, Lighthouse, Render.com, Grafana\\
-    \textbf{Security:} JWT, OAuth2, Helmet, Bedrock Passport\\
-    \textbf{Tools:} Git, npm/yarn, Puppeteer, BeautifulSoup\\
-    \textbf{Design:} Figma, Adobe XD, responsive \& accessible UI
+    \textbf{DevOps:} Docker, AWS Lambda, API Gateway, CI/CD (GitHub Actions)\\
+    \textbf{Scraping:} BeautifulSoup, Selenium automation\\
+    \textbf{Monitoring:} Grafana, Render.com
   }}
 \end{itemize}
 
@@ -106,9 +94,8 @@
 \resumeSubHeadingListStart
   \resumeItem{AWS Certified Cloud Practitioner}
   \resumeItem{AWS Solutions Architect -- Associate}
-  \resumeItem{AWS Certified Developer -- Associate}
+  \resumeItem{AWS Technical Essentials}
   \resumeItem{Designing Event-Driven Architectures}
-  \resumeItem{Google Cloud Certified Associate Cloud Engineer}
 \resumeSubHeadingListEnd
 
 \end{document}

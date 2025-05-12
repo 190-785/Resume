@@ -1,11 +1,11 @@
 %-------------------------
-% AI & ML Resume for Yash Agarwal
+% AI & ML Resume for Yash Agarwal (Updated Per Feedback)
 %-------------------------
 \documentclass[letterpaper,11pt]{article}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref} % hidelinks for a clean look, links are still clickable
+\usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \input{glyphtounicode}
 \pagestyle{fancy}\fancyhf{}\renewcommand{\headrulewidth}{0pt}
@@ -18,14 +18,14 @@
 %--- Custom Commands ---
 \newcommand{\resumeItem}[1]{\item\small{#1\vspace{-2pt}}}
 \newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item
-  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1} & #2 \\
     \textit{\small#3} & \textit{\small#4} \\
   \end{tabular*}\vspace{-7pt}}
-% Modified resumeProjectHeading to use "Source Code" for project links
-\newcommand{\resumeProjectHeading}[2]{\item
-  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-    \textbf{#1} & \href{#2}{Source Code} \\
+% Hyperlinked project title + full-month timeline
+\newcommand{\resumeProjectHeading}[3]{\vspace{-2pt}\item
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \href{#1}{\textbf{#2}} & {\small #3} \\
   \end{tabular*}\vspace{-5pt}}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in,label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -38,7 +38,9 @@
 \begin{center}
   \textbf{\Huge \scshape Yash Agarwal}\\
   \small
-  \href{mailto:190e785@gmail.com}{190e785@gmail.com} \textbar\ +91-90276-01476 \textbar\ \href{<LinkedIn_URL>}{LinkedIn} \textbar\ \href{<GitHub_URL>}{GitHub}
+  \href{mailto:190e785@gmail.com}{190e785@gmail.com} \textbar\ +91-90276-01476 \textbar\ 
+  \href{https://in.linkedin.com/in/yash-agarwal-190e785}{LinkedIn} \textbar\ 
+  \href{https://github.com/190-785}{GitHub}
 \end{center}
 
 %--- Education ---
@@ -46,29 +48,30 @@
 \resumeSubHeadingListStart
   \resumeSubheading
     {Graphic Era Hill University}{Uttarakhand, India}
-    {B.Tech, CSE (Honors in ML \& AI)}{Aug 2023 -- Jul 2027}
+    {Bachelor of Technology in Computer Science \& Engineering (Honors in ML \& AI)}{August 2023 -- July 2027}
 \resumeSubHeadingListEnd
 
 %--- Projects ---
 \section{Projects}
 \resumeSubHeadingListStart
 
-  \resumeProjectHeading{Kidney Stone Detection Model}{<Kidney_Stone_Model_URL>}
+  \resumeProjectHeading
+    {https://github.com/190-785/AI-ML-Project-Grafest}{Kidney Stone Detection Model}{March 2025 -- Present}
   \resumeItemListStart
-    \resumeItem{Built a binary image classifier using TensorFlow and CNNs for ultrasound scans.}
-    \resumeItem{Performed preprocessing (thresholding, contouring) using OpenCV to enhance inputs.}
-    \resumeItem{Trained with image augmentation (rotation, shift, flip) for robust accuracy.}
-    \resumeItem{Deployed inference endpoint with Flask + Docker; tested with AWS Model Monitor.}
-    \resumeItem{Achieved 92\% accuracy with tuned learning rates and dropout layers.}
+    \resumeItem{Developed a binary classifier for ultrasound scans using TensorFlow and convolutional neural networks.}
+    \resumeItem{Applied OpenCV preprocessing (thresholding, contour extraction) to enhance image quality.}
+    \resumeItem{Employed data augmentation (rotation, scaling, flips) to improve model generalization.}
+    \resumeItem{Packaged inference as a Flask + Docker endpoint and monitored performance with AWS SageMaker Model Monitor.}
+    \resumeItem{Achieved a classification accuracy of 92\% through the tuning of learning rates, batch sizes, and dropout rates.}
   \resumeItemListEnd
 
-  \resumeProjectHeading{Celebrity Comment Real vs Fake Classifier}{<Comment_Classifier_URL>}
+  \resumeProjectHeading
+    {https://github.com/190-785/AI-ML-Project-Grafest}{Celebrity Comment Real vs Fake Classifier}{February 2025 -- April 2025}
   \resumeItemListStart
-    \resumeItem{Scraped thousands of celebrity post comments and manually labeled ground truth.}
-    \resumeItem{Built and compared Naive Bayes, SVM, and BiLSTM models using TensorFlow.}
-    \resumeItem{Implemented text preprocessing with spaCy and vectorization with TF-IDF.}
-    \resumeItem{Achieved 89\% F1 score on BiLSTM model; deployed as Flask REST API.}
-    \resumeItem{Tested inference latency and batch accuracy in production container.}
+    \resumeItem{Developed an NLP pipeline using spaCy for tokenization, lemmatization, and stopword removal.}
+    \resumeItem{Compared Naive Bayes, SVM, and BiLSTM models in TensorFlow; selected BiLSTM achieving 89\% F1 score.}
+    \resumeItem{Deployed as a Dockerized Flask REST API; tracked metrics and latency via Grafana.}
+    \resumeItem{Validated model robustness with cross-validation and confusion matrix analysis.}
   \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -77,18 +80,19 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in,label={}]
   \small{\item{
-    \textbf{ML Frameworks:} TensorFlow, scikit-learn, Keras\\
+    \textbf{Machine Learning:} TensorFlow, scikit-learn, Keras, AWS SageMaker\\
+    \textbf{Data \& Visualization:} pandas, NumPy, Matplotlib, OpenCV\\
     \textbf{NLP:} spaCy, NLTK, Hugging Face Transformers\\
-    \textbf{Data Tools:} pandas, NumPy, Matplotlib, OpenCV\\
-    \textbf{Deployment:} Flask, Docker, AWS SageMaker, Render
+    \textbf{Deployment \& DevOps:} Flask, Docker, AWS Lambda, Render, Git, GitHub Actions, CI/CD, Docker Compose, Grafana\\
+    \textbf{Soft Skills:} Teamwork, Communication, Problem-solving
   }}
 \end{itemize}
 
 %--- Certifications ---
 \section{Certifications}
 \resumeSubHeadingListStart
-  \resumeItem{AWS Certified Machine Learning -- Specialty}
-  \resumeItem{AWS ML Engineer Associate Learning Path (includes labs)}
+  \resumeItem{AWS Certified Machine Learning – Specialty}
+  \resumeItem{AWS ML Engineer Associate Learning Path}
   \resumeItem{AWS Cloud Quest: Machine Learning}
   \resumeItem{AWS Cloud Practitioner Essentials}
   \resumeItem{Machine Learning Essentials for Business and Technical Decision Makers}

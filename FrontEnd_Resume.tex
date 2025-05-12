@@ -1,30 +1,35 @@
 %-------------------------
-% Front-End Resume for Yash Agarwal
+% Front-End Resume for Yash Agarwal (With Updated Skills)
 %-------------------------
 \documentclass[letterpaper,11pt]{article}
+\setlength{\footskip}{4.08003pt}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref} % hidelinks for clean look, links are still clickable
+\usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \input{glyphtounicode}
 \pagestyle{fancy}\fancyhf{}\renewcommand{\headrulewidth}{0pt}
 \addtolength{\oddsidemargin}{-0.5in}\addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}\addtolength{\textheight}{1.0in}
-\urlstyle{same}\raggedbottom\raggedright\setlength{\tabcolsep}{0in}
-\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\titlerule\vspace{-5pt}]
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}
+[\titlerule\vspace{-5pt}]
 \pdfgentounicode=1
 
-%--- Custom Commands ---
+%--- Commands ---
 \newcommand{\resumeItem}[1]{\item\small{#1\vspace{-2pt}}}
 \newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item
-  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1} & #2 \\
     \textit{\small#3} & \textit{\small#4} \\
   \end{tabular*}\vspace{-7pt}}
-\newcommand{\resumeProjectHeading}[2]{\item
-  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-    \textbf{#1} & \href{#2}{Live Demo} \\ % Made the project URL clickable with "Live Demo" text
+\newcommand{\resumeProjectHeading}[3]{\vspace{-2pt}\item
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \href{#1}{\textbf{#2}} & {\small #3} \\
   \end{tabular*}\vspace{-5pt}}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in,label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -37,7 +42,9 @@
 \begin{center}
   \textbf{\Huge \scshape Yash Agarwal}\\
   \small
-  \href{mailto:190e785@gmail.com}{190e785@gmail.com} \textbar\ +91-90276-01476 \textbar\ \href{<LinkedIn_URL>}{LinkedIn} \textbar\ \href{<GitHub_URL>}{GitHub}
+  \href{mailto:190e785@gmail.com}{190e785@gmail.com} \textbar\ +91-90276-01476 \textbar\ 
+  \href{https://in.linkedin.com/in/yash-agarwal-190e785}{LinkedIn} \textbar\ 
+  \href{https://github.com/190-785}{GitHub}
 \end{center}
 
 %--- Education ---
@@ -45,50 +52,54 @@
 \resumeSubHeadingListStart
   \resumeSubheading
     {Graphic Era Hill University}{Uttarakhand, India}
-    {B.Tech, CSE (Honors in ML \& AI)}{Aug 2023 -- Jul 2027}
+    {Bachelor of Technology, CSE (Honors in ML \& AI)}{}
 \resumeSubHeadingListEnd
 
 %--- Projects ---
 \section{Projects}
 \resumeSubHeadingListStart
 
-  \resumeProjectHeading{Interactive Resume Maker}{<Interactive_Resume_Maker_URL>}
+  % Interactive Resume Maker
+  \resumeProjectHeading
+    {https://github.com/190-785/Interactive_Resume_Maker}{Interactive Resume Maker}{April 2025 -- Present}
   \resumeItemListStart
-    \resumeItem{Developed a dynamic résumé editor with React and Tailwind CSS, enabling real-time section edits.}
-    \resumeItem{Integrated serverless PDF export via Puppeteer, ensuring high-fidelity document generation.}
-    \resumeItem{Implemented drag-and-drop section reordering and theme customization for user flexibility.}
-    \resumeItem{Conducted usability testing and iterated UI to meet ARIA accessibility standards.}
-    \resumeItem{Documented API endpoints and component library usage for future contributions.}
+    \resumeItem{Developed a dynamic resume editor with React and Tailwind CSS for real-time editing of sections.}
+    \resumeItem{Integrated serverless PDF export via Puppeteer to ensure high-quality outputs.}
+    \resumeItem{Implemented drag-and-drop reordering and customizable themes for enhanced UX.}
+    \resumeItem{Conducted usability testing and iterated the UI to meet ARIA accessibility standards.}
+    \resumeItem{Documented component library and API usage for seamless collaboration.}
   \resumeItemListEnd
 
-  \resumeProjectHeading{First Link Rule Frontend}{<First_Link_Frontend_URL>}
+  % Personal Blog Site
+  \resumeProjectHeading
+    {https://190e785.wordpress.com/}{Personal Blog Site}{March 2024 -- Present}
   \resumeItemListStart
-    \resumeItem{Built a Vue.js application to visualize Wikipedia first-link traversals toward \textit{"Philosophy"}.}
-    \resumeItem{Rendered interactive SVG graphs and provided search/filter to inspect link paths.}
-    \resumeItem{Optimized performance using code splitting and lazy loading, reducing initial payload by 40\%.}
-    \resumeItem{Shared design tokens and component guidelines in a published style guide.}
-    \resumeItem{Collaborated with backend team to integrate REST endpoints for real-time updates.}
+    \resumeItem{Developed a custom WordPress theme using PHP templating and modern JavaScript.}
+    \resumeItem{Implemented SEO best practices: meta tags, structured data, sitemap generation.}
+    \resumeItem{Created reusable Gutenberg blocks to standardize tutorial layouts.}
+    \resumeItem{Ensured mobile-first responsive design and cross-browser compatibility.}
+    \resumeItem{Improved performance with lazy-loading images and deferred scripts.}
   \resumeItemListEnd
 
-  \resumeProjectHeading{Personal Blog Site}{<Blog_Site_URL>}
+  % First Link Rule Frontend
+  \resumeProjectHeading
+    {https://wikipedialinkrule.vercel.app}{First Link Rule Frontend}{August 2024 -- Present}
   \resumeItemListStart
-    \resumeItem{Developed a custom WordPress theme using PHP templating mixed with modern JS.}
-    \resumeItem{Integrated SEO best practices, including meta tags and sitemap generation.}
-    \resumeItem{Built reusable Gutenberg blocks and shortcodes to standardize tutorial posts.}
-    \resumeItem{Ensured mobile-first responsive design and cross-browser compatibility for lecture notes.}
-    \resumeItem{Implemented lazy-loading of images and deferred JS for faster page loads.}
+    \resumeItem{Built a Vue.js application to visualize Wikipedia’s first-link path toward “Philosophy.”}
+    \resumeItem{Rendered interactive SVG graphs with search and filtering capabilities.}
+    \resumeItem{Optimized performance; reduced initial bundle size by 40\% through code splitting.}
+    \resumeItem{Published a shared style guide with design tokens for consistency.}
+    \resumeItem{Integrated real-time data fetching from backend APIs for live updates.}
   \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
-%--- Skills ---
+%--- Technical Skills ---
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.15in,label={}]
   \small{\item{
-    \textbf{Frontend:} React, Vue.js, Vite, Tailwind CSS, HTML5, CSS3, ES6\\
-    \textbf{State Mgmt:} Redux, Vuex, Context API\\
-    \textbf{Tools:} Git, npm/yarn, Vercel, Webpack, Lighthouse\\
-    \textbf{Design:} Figma, Adobe XD, responsive \& accessible UI
+    React, Vue.js, Tailwind CSS, HTML5, CSS3, ES6, Next.js, Redux, Context API,\\
+    Git, npm/yarn, Vercel, Webpack, Material-UI
   }}
 \end{itemize}
 
@@ -96,8 +107,8 @@
 \section{Certifications}
 \resumeSubHeadingListStart
   \resumeItem{AWS Certified Cloud Practitioner}
-  \resumeItem{AWS Solutions Architect -- Associate}
-  \resumeItem{AWS Certified Developer -- Associate}
+  \resumeItem{AWS Solutions Architect – Associate}
+  \resumeItem{AWS Certified Developer – Associate}
   \resumeItem{Google Cloud Certified Associate Cloud Engineer}
 \resumeSubHeadingListEnd
 
