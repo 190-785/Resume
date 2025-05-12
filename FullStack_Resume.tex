@@ -1,0 +1,108 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage{fancyhdr}
+\input{glyphtounicode}
+\pagestyle{fancy}\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.5in}\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}\addtolength{\textheight}{1.0in}
+\urlstyle{same}\raggedbottom\raggedright\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\titlerule\vspace{-5pt}]
+\pdfgentounicode=1
+
+%--- Commands ---
+\newcommand{\resumeItem}[1]{\item\small{#1\vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small#4} \\
+  \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeProjectHeading}[3]{\vspace{-2pt}\item
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \href{#1}{\textbf{#2}} & {\small #3} \\
+  \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in,label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%--- Heading ---
+\begin{center}
+  \textbf{\Huge \scshape Yash Agarwal}\\
+  \small
+  \href{mailto:190e785@gmail.com}{190e785@gmail.com} \textbar\ +91-90276-01476 \textbar\ 
+  \href{https://in.linkedin.com/in/yash-agarwal-190e785}{LinkedIn} \textbar\ 
+  \href{https://github.com/190-785}{GitHub}
+\end{center}
+
+%--- Education ---
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Graphic Era Hill University}{Uttarakhand, India}
+    {Bachelor of Technology in Computer Science \& Engineering (Honors in ML \& AI)}{Aug 2023 -- July 2027}
+\resumeSubHeadingListEnd
+
+%--- Projects ---
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {https://github.com/190-785/Interactive_Resume_Maker}{Interactive Resume Maker (Frontend)}{April 2025 -- Present}
+  \resumeItemListStart
+    \resumeItem{Developed a dynamic resume editor using React and Tailwind CSS with real-time component editing.}
+    \resumeItem{Implemented drag-and-drop reordering and theme customization for UX personalization.}
+    \resumeItem{Integrated Puppeteer-based PDF export to generate polished printable versions.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {https://190e785.wordpress.com/}{Personal Blog Site}{March 2024 -- Present}
+  \resumeItemListStart
+    \resumeItem{Built and customized a personal blog using WordPress, custom PHP templates, and JavaScript.}
+    \resumeItem{Applied SEO best practices and performance optimizations like lazy-loading and deferred scripts.}
+    \resumeItem{Created reusable Gutenberg blocks for standardized tutorials and content.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {https://wikipedialinkrule.vercel.app}{First Link Rule (Frontend)}{August 2024 -- Present}
+  \resumeItemListStart
+    \resumeItem{Built a responsive SPA using Vue.js and Tailwind CSS to visualize Wikipedia’s first-link paths.}
+    \resumeItem{Integrated dynamic SVG graphs with live data fetched from a Node.js backend.}
+    \resumeItem{Implemented client-side search, filter, and navigation features for interactive exploration.}
+  \resumeItemListEnd
+
+  \resumeProjectHeading
+    {https://github.com/190-785/First_Link_Backend}{First Link Rule (Backend)}{August 2024 -- Present}
+  \resumeItemListStart
+    \resumeItem{Built a RESTful API in Node.js \& Express that scrapes Wikipedia first-link paths using BeautifulSoup.}
+    \resumeItem{Used MongoDB for traversal data storage and Redis for caching to improve performance.}
+    \resumeItem{Dockerized the backend and deployed on Render and AWS Lambda for scalable access.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%--- Skills ---
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in,label={}]
+  \small{\item{
+    \textbf{Languages/Frameworks:} React.js, Next.js, TypeScript, Vue.js, Tailwind CSS, HTML5, JavaScript (ES6+), CSS3 \\
+    \textbf{Backend:} Node.js, Express.js, REST APIs \\
+    \textbf{Databases:} Supabase, Firebase, MongoDB, PostgreSQL \\
+    \textbf{Tools:} Git, Vercel, Docker, Puppeteer, BeautifulSoup
+  }}
+\end{itemize}
+
+%--- Certifications ---
+\section{Certifications}
+\resumeSubHeadingListStart
+  \resumeItem{AWS Certified Cloud Practitioner}
+  \resumeItem{AWS Solutions Architect -- Associate}
+  \resumeItem{Google Cloud Associate Cloud Engineer}
+\resumeSubHeadingListEnd
+
+\end{document}
