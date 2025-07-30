@@ -1,0 +1,119 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage{fancyhdr}
+\input{glyphtounicode}
+\pagestyle{fancy}\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.5in}\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}\addtolength{\textheight}{1.0in}
+\urlstyle{same}\raggedbottom\raggedright\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\titlerule\vspace{-5pt}]
+\pdfgentounicode=1
+
+%--- Commands ---
+\newcommand{\resumeItem}[1]{\item\small{#1\vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item
+  \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small#4} \\
+  \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeProjectHeading}[2]{\vspace{-2pt}\item
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \href{#1}{\textbf{#2}} \\
+  \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in,label={} ]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%--- Heading ---
+\begin{center}
+  \textbf{\Huge \scshape Yash Agarwal}\\
+  \small
+  \href{mailto:190e785@gmail.com}{190e785@gmail.com} \textbar\ +91-90276-01476 \textbar\ 
+  \href{https://in.linkedin.com/in/yash-agarwal-190e785}{LinkedIn} \textbar\ 
+  \href{https://github.com/190-785}{GitHub}
+\end{center}
+
+%--- Education ---
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Graphic Era Hill University}{Uttarakhand, India}
+    {B.Tech. in Computer Science \& Engineering, Honors in ML \& AI}{Aug 2023 -- July 2027}
+    \vspace{-3pt}
+\resumeSubHeadingListEnd
+
+%--- Projects ---
+\section{Projects}
+\resumeSubHeadingListStart
+
+ \resumeProjectHeading{https://github.com/190-785/Interactive-Resume-Maker}{Interactive Resume Maker}
+\resumeItemListStart
+  \resumeItem{Full-stack application with React and Three.js to visualize resumes in a real-time 3D forest UI.}
+  \resumeItem{Integrated secure user authentication using JWT and BCrypt with MongoDB-based session handling.}
+  \resumeItem{Auto-save, versioned resume edits, and real-time collaboration pipeline using WebSockets.}
+\resumeItemListEnd
+
+\resumeProjectHeading{https://github.com/190-785/Plant_Watering_System}{IoT Plant Watering System}
+\resumeItemListStart
+  \resumeItem{Engineered an autonomous soil moisture monitoring system using ESP8266 microcontroller and threshold-triggered pump.}
+  \resumeItem{Built secure web configuration portal with ESPAsyncWebServer.}
+  \resumeItem{Logged telemetry data in Firebase, resulting in a 20\% increase in data-driven insights for optimizing plant watering schedules.}
+  \resumeItem{Token-authenticated data logging; designed for power efficiency and modular upgrades.}
+\resumeItemListEnd
+
+\resumeProjectHeading{https://first-link-delta.vercel.app/}{First Link Rule (Frontend)}
+\resumeItemListStart
+  \resumeItem{Vue.js app to show Wikipedia traversal paths returned by backend API.}
+  \resumeItem{Fetched data using Axios; rendered results with list and minimal interactivity.}
+  \resumeItem{Styled using Tailwind CSS for a clean, responsive layout.}
+\resumeItemListEnd
+
+\resumeProjectHeading{https://github.com/190-785/First_Link_Backend}{First Link Rule (Backend)}
+\resumeItemListStart
+  \resumeItem{Developed Flask-based backend that recursively parses Wikipedia articles using BeautifulSoup (preferred over Scrapy to reduce memory and runtime usage by ~80\%).}
+  \resumeItem{Implemented dead-end/loop detection with max traversal limits; persisted results in MongoDB.}
+  \resumeItem{Cached frequent API responses with Redis and containerized services using Docker.}
+  \resumeItem{Deployed stateless REST architecture on AWS Lambda for cost-efficient scale.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%--- Skills ---
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in,label={}]
+  \small{
+    \item \textbf{Technical Skills}
+      \begin{itemize}[leftmargin=0.3in]
+        \item \textbf{Programming Languages:} Java, C/C++, Python, JavaScript, TypeScript
+        \item \textbf{Frameworks \& Libraries:} React, Vue.js, Tailwind CSS, Three.js
+        \item \textbf{Backend \& APIs:} Node.js, Express, Flask, RESTful Services
+        \item \textbf{Databases \& Storage:} MongoDB, PostgreSQL, Firebase, Redis
+        \item \textbf{Tools \& Platforms:} Git, Docker, AWS Lambda, Unix/Linux, Puppeteer, BeautifulSoup
+      \end{itemize}
+    \item \textbf{Analytical Skills}
+      \begin{itemize}[leftmargin=0.3in]
+        \item Data Analysis, Statistical Modeling, Data Visualization, A/B Testing
+      \end{itemize}
+    \item \textbf{Soft Skills}
+      \begin{itemize}[leftmargin=0.3in]
+        \item Communication, Problem-solving, Teamwork, Agile Collaboration
+      \end{itemize}
+  }
+\end{itemize}
+
+%--- Certifications ---
+\section{Certifications}
+\resumeSubHeadingListStart
+  \resumeItem{AWS Certified Cloud Practitioner}
+  \resumeItem{AWS Solutions Architect – Associate}
+  \resumeItem{Google Cloud Associate Cloud Engineer}
+\resumeSubHeadingListEnd
+
+\end{document}

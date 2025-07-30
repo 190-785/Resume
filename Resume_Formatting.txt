@@ -1,0 +1,49 @@
+Resume:
+
+	{RESUME SHOULD NOT BE SAME IN EVERY COMPANY 
+Heading:
+	Contact Details: contact no. email (1 line in order) 
+			LinkedIn Profile, Github Profile
+
+Education Details: Latest -> older 
+		[ For currrent one write 2023 - Present ]
+
+Experience:
+	Heading:
+	Duration:
+		{ 2- 3 Line paragraph }
+
+Projects: {Do best of three}
+	[Title : Should show which skill set and domail/feild ] 
+		to the write hand side of that title write the duration of that project	
+[ Can write guided by [Faculty name] ]
+Write the description of the project in 3 points [ 1 sentence in a single line]
+2nd sentence what tech stack and skills used
+3rd what was the outcome of the project [ write as much numerical data as possible showing stats]
+
+Skills:
+	Heading Technical skill: [Do not mention c]
+			Frameworks [ write it in a seperate point ]
+			Libraries [Ml ones] [like sklearn, kears, tensorflow] { Mention the points you know what }
+	Soft skill:
+{ IN the aboe check the company requirements and then curate the resume }
+If your resume has not been completed with the above write
+Academic Subjects:
+
+Certifications:[ DO not use the certificate section name ] 
+		Check for some fancy name depending on what your certifications are
+		Do not include certificates that are introductions to ___
+
+	
+
+For Projects:
+
+		1. Web Dev: Rather than just HTML, CSS JS DO stacks [MERN]
+		2. Machine Learning: NLS, Image Processing
+		3. Deep Learning: Neural Networks-> CNN, RNN, LSTM, Bi-LSTM
+		4. IOT
+		5. Cybersecurity: Security, Encryption, Decryption [ Understand the algos and implement them ]
+		
+
+Major Project: Check the domain and by using different tech and understand the existing projects and 
+		solve the existing issues or problems in them.
