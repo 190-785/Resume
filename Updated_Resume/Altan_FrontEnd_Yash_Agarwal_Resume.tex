@@ -1,0 +1,152 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Yash Agarwal
+% Template Based on: sb2nov/resume (MIT License)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----- FORMATTING & MARGINS -----
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%----- SECTION FORMATTING -----
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%----- ATS COMPATIBILITY -----
+\pdfgentounicode=1
+
+%----- CUSTOM COMMANDS -----
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2}
+    \end{tabular*}\vspace{-3pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%
+%-------------------------------------------
+
+\begin{document}
+
+%---------- HEADING ----------
+\begin{center}
+    \textbf{\Huge \scshape Yash Agarwal} \\ \vspace{1pt}
+    \small +91-90276-01476 $|$ \href{mailto:190e785@gmail.com}{190e785@gmail.com} $|$
+    \href{https://in.linkedin.com/in/yash-agarwal-190e785}{\underline{LinkedIn}} $|$
+    \href{https://github.com/190-785}{\underline{GitHub}}
+\end{center}
+
+%---------- EDUCATION ----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Graphic Era Hill University}{Uttarakhand, India}
+      {B.Tech. in Computer Science \& Engineering; Honors in ML \& AI}{Aug 2023 -- Present}
+  \resumeSubHeadingListEnd
+
+%---------- EXPERIENCE ----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Web Developer Intern}{May 2025 -- July 2025}
+      {Arterns Technologies Private Limited}{Dehradun, Uttarakhand}
+      \resumeItemListStart
+        \resumeItem{Developed and polished user-facing features for an Applicant Tracking System on \href{https://menticate.com}{\textbf{menticate.com}} using Next.js, significantly improving UI performance and workflow efficiency.}
+        \resumeItem{Seamlessly integrated a real-time chat API, ensuring smooth, high-performance data flows between the frontend and backend services to enhance user interaction.}
+        \resumeItem{Led the internationalization of \href{https://vedichealings.com}{\textbf{vedichealings.com}} by implementing the i18next library, launching full Spanish language support and improving accessibility for a global audience.}
+        \resumeItem{Contributed to an Agile team by shipping meaningful bug fixes and improving feature reliability, which helped reduce project timeline overruns by 20\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%---------- PROJECTS ----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/190-785/Interactive-Resume-Maker}{Interactive 3D Resume Builder}}}{Feb 2025 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{\textbf{Tech Stack:} React, Three.js, TypeScript, Spring Boot, MongoDB, WebSockets}
+        \resumeItem{Architected a 0→1 product experiment to visualize resume data in an immersive 3D forest, creating an intelligent, user-friendly interface that redefines personal branding.}
+        \resumeItem{Engineered a robust backend with secure JWT authentication and real-time collaboration features using WebSockets, allowing multiple users to edit seamlessly.}
+        \resumeItem{\textbf{Outcome:} Delivered a novel, high-performance resume experience that increased user engagement and demonstrated innovative use of data visualization libraries.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/190-785/First_Link_Backend}{Wikipedia Path Finder}}}{Oct 2024 -- Dec 2024}
+      \resumeItemListStart
+        \resumeItem{\textbf{Tech Stack:} Python, Flask, Redis, MongoDB, Docker, BeautifulSoup}
+        \resumeItem{Developed a backend service to solve the "Philosophy Game" by tracing the traversal path from any Wikipedia page to 'Philosophy', handling complex loop and dead-end detection.}
+        \resumeItem{Integrated Redis for caching common paths and containerized the application with Docker, ensuring scalability and faster response times under load.}
+        \resumeItem{\textbf{Outcome:} Optimized pathfinding and parsing runtime by over 80\%, significantly improving performance and demonstrating strong analytical and problem-solving skills.}
+      \resumeItemListEnd
+      
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/190-785/Plant_Watering_System}{IoT Automatic Plant Watering System}}}{Jun 2025 -- Jul 2025}
+      \resumeItemListStart
+        \resumeItem{\textbf{Tech Stack:} ESP8266, Firebase, C++, ESPAsyncWebServer}
+        \resumeItem{Designed an autonomous system to monitor soil moisture and dispense water, fully integrated with a cloud backend for remote management.}
+        \resumeItem{Developed a secure web portal for Wi-Fi configuration and built a real-time dashboard using Firebase to monitor sensor data, providing a seamless remote user experience.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%---------- TECHNICAL SKILLS ----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, TypeScript, Python, Java, C++} \\
+     \textbf{Frontend}{: React, Next.js, Three.js, HTML5, CSS3, Data Visualization} \\
+     \textbf{Backend}{: Node.js, Spring Boot, Flask, REST/GraphQL APIs} \\
+     \textbf{Databases \& Storage}{: MongoDB, Firebase, Redis} \\
+     \textbf{Developer Tools}{: Git, Docker, Postman, WebSockets, GitHub Copilot, ChatGPT-4}
+    }}
+ \end{itemize}
+
+%---------- Soft Skills ----------
+\section{Soft Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{Agile Collaboration, Proactive Problem-Solving, Cross-Functional Communication, Project Ownership, Teamwork \& Leadership}}
+ \end{itemize}
+
+\end{document}
