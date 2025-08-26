@@ -1,0 +1,157 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Yash Agarwal
+% Template Based on: sb2nov/resume (MIT License)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----- FORMATTING & MARGINS -----
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%----- SECTION FORMATTING -----
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%----- ATS COMPATIBILITY -----
+\pdfgentounicode=1
+
+%----- CUSTOM COMMANDS -----
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\ % Changed this line
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2}
+    \end{tabular*}\vspace{-3pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%
+%-------------------------------------------
+
+\begin{document}
+
+%---------- HEADING ----------
+\begin{center}
+    \textbf{\Huge \scshape Yash Agarwal} \\ \vspace{1pt}
+    \small +91-90276-01476 $|$ \href{mailto:190e785@gmail.com}{190e785@gmail.com} $|$
+    \href{https://in.linkedin.com/in/yash-agarwal-190e785}{\underline{linkedin.com/in/yash-agarwal-190e785}} $|$
+    \href{https://github.com/190-785}{\underline{github.com/190-785}}
+\end{center}
+
+%---------- EDUCATION ----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Graphic Era Hill University}{Uttarakhand, India}
+      {B.Tech. in Computer Science \& Engineering; Honors in ML \& AI}{\textit{\small Aug 2023 -- Present}}
+  \resumeSubHeadingListEnd
+
+%---------- EXPERIENCE ----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Software Engineering Intern}{May 2025 -- July 2025}
+      {Arterns Technologies Private Limited}{Dehradun, India}
+      \resumeItemListStart
+        \resumeItem{Developed scalable back-end APIs and server-side logic for an Applicant Tracking System handling high-volume requests.}
+        \resumeItem{Implemented secure real-time features (chat, assessment pipelines) ensuring low-latency asynchronous communication.}
+        \resumeItem{Optimized database queries and caching strategies, reducing API response times by 20\%.}
+        \resumeItem{Worked in an Agile team, collaborating with designers, QA, and backend developers to deliver production-ready solutions using CI/CD pipelines.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%---------- PROJECTS ----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/190-785/First_Link_Backend}{Wikipedia Path Finder}}}{Oct 2024 -- Dec 2024}
+      \resumeItemListStart
+        \resumeItem{\textbf{Tech Stack:} Python, Flask, MongoDB, Redis, Docker}
+        \resumeItem{Built a scalable service to compute paths between Wikipedia pages by recursively traversing first links, handling cycles and dead ends.}
+        \resumeItem{Designed efficient caching strategies using Redis, achieving $\sim$80\% runtime improvement under high-volume queries.}
+        \resumeItem{Containerized with Docker and optimized request handling for scalability in production-like environments.}
+      \resumeItemListEnd
+      
+           \resumeProjectHeading
+      {\textbf{\href{https://github.com/190-785/Plant_Watering_System}{IoT Automatic Plant Watering System}}}{Jun 2025 -- Jul 2025}
+      \resumeItemListStart
+        \resumeItem{Built an autonomous IoT solution with ESP8266 and soil-moisture sensors for automated irrigation.}
+        \resumeItem{Integrated Firebase with secure token-based authentication for real-time data logging.}
+        \resumeItem{Developed an asynchronous web server for Wi-Fi configuration and remote control.}
+        \resumeItem{Optimized firmware with interrupt-driven sensor handling to reduce latency and power usage.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/190-785/Interactive-Resume-Maker}{Interactive 3D Resume Builder}}}{Feb 2025 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{Developed a 3D resume visualization tool using React, Three.js, and Spring Boot.}
+        \resumeItem{Implemented JWT authentication and scalable MongoDB backend for secure data storage.}
+        \resumeItem{Enabled real-time collaboration via WebSockets with auto-save and versioning.}
+        \resumeItem{Optimized performance with asset lazy-loading and Docker-based CI/CD deployment.}
+      \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+%---------- TECHNICAL SKILLS ----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Core CS}{: Data Structures, Algorithms, Operating Systems, DBMS, OOP} \\
+     \textbf{Languages}{: Python, Java, C++, JavaScript, TypeScript} \\
+     \textbf{Back-end \& Systems}{: Flask, Node.js, Spring Boot, REST APIs, Redis, Docker} \\
+     \textbf{Machine Learning}{: TensorFlow, Keras, scikit-learn, Pandas, NumPy} \\
+     \textbf{Databases}{: MongoDB, Firebase, SQL} \\
+     \textbf{Developer Tools}{: Git, Azure DevOps, Postman, Linux}
+    }}
+ \end{itemize}
+
+%---------- SOFT SKILLS ----------
+\section{Soft Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{Problem Solving, Scalability Thinking, Collaboration, Communication, Agile/Scrum}}
+ \end{itemize}
+
+ 
+\end{document}

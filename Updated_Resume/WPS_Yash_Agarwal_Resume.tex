@@ -1,0 +1,155 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Yash Agarwal
+% Template Based on: sb2nov/resume (MIT License)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----- FORMATTING & MARGINS -----
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%----- SECTION FORMATTING -----
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%----- ATS COMPATIBILITY -----
+\pdfgentounicode=1
+
+%----- CUSTOM COMMANDS -----
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\ % Changed this line
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2}
+    \end{tabular*}\vspace{-3pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%
+%-------------------------------------------
+
+\begin{document}
+
+%---------- HEADING ----------
+\begin{center}
+    \textbf{\Huge \scshape Yash Agarwal} \\ \vspace{1pt}
+    \small +91-90276-01476 $|$ \href{mailto:190e785@gmail.com}{190e785@gmail.com} $|$
+    \href{https://in.linkedin.com/in/yash-agarwal-190e785}{\underline{linkedin.com/in/yash-agarwal-190e785}} $|$
+    \href{https://github.com/190-785}{\underline{github.com/190-785}}
+\end{center}
+
+%---------- EDUCATION ----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Graphic Era Hill University}{Uttarakhand, India}
+      {B.Tech. in Computer Science \& Engineering; Honors in ML \& AI}{\textit{\small Aug 2023 -- Present}}
+  \resumeSubHeadingListEnd
+
+%---------- EXPERIENCE ----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Web Developer Intern}{May 2025 -- July 2025}
+      {\href{https://drive.google.com/file/d/1yUwuZXi9aFgvmFDl0UV3BKAaYXMIYn_a/view?usp=sharing}{Arterns Technologies Private Limited}}{Dehradun, Uttarakhand}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained user-facing features in React.js, ensuring cross-browser compatibility and responsive design.}
+        \resumeItem{Translated Figma-based UI/UX mockups into high-quality, reusable React components using React Hooks and React Router.}
+        \resumeItem{Integrated RESTful APIs and implemented asynchronous data flows to deliver real-time features such as chat and assessments.}
+        \resumeItem{Optimized front-end performance, reducing load time by 18\% across devices and improving Lighthouse accessibility scores.}
+        \resumeItem{Collaborated with designers, QA engineers, and back-end developers in Agile sprints, following CI/CD best practices via Azure DevOps.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%---------- PROJECTS ----------
+\section{Projects}
+
+  \resumeSubHeadingListStart
+      \resumeProjectHeading
+      {\textbf{\href{https://github.com/190-785/Plant_Watering_System}{IoT Automatic Plant Watering System}}}{Jun 2025 -- Jul 2025}
+      \resumeItemListStart
+        \resumeItem{\textbf{Tech Stack:} ESP8266, Firebase, C++, ESPAsyncWebServer}
+        \resumeItem{Developed a secure web portal with responsive UI for Wi-Fi configuration and real-time monitoring.}
+        \resumeItem{Integrated Firebase for token-based authentication and cloud data logging, enabling asynchronous remote access.}
+        \resumeItem{Optimized system telemetry flow and data visualization for improved user experience and 20\% better watering efficiency.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/190-785/Interactive-Resume-Maker}{Interactive 3D Resume Builder}}}{Feb 2025 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{\textbf{Tech Stack:} React, Three.js, TypeScript, MongoDB, Spring Boot}
+        \resumeItem{Built an interactive resume platform with reusable React components and responsive layouts optimized for multiple devices.}
+        \resumeItem{Implemented JWT authentication and WebSocket-based collaboration, following modular CI/CD deployment pipelines.}
+        \resumeItem{Delivered a unique front-end experience with cross-browser stability and measurable improvements in engagement.}
+      \resumeItemListEnd
+      
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/190-785/First_Link_Backend}{Wikipedia Path Finder}}}{Oct 2024 -- Dec 2024}
+      \resumeItemListStart
+        \resumeItem{\textbf{Tech Stack:} Python, Flask, React, MongoDB, Docker}
+        \resumeItem{Designed a React-based interface integrated with a Python/Flask backend, consuming REST APIs asynchronously.}
+        \resumeItem{Optimized client-side rendering and caching, reducing API response latency by 80\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%---------- TECHNICAL SKILLS ----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript (ES6+), TypeScript, Python, Java, C++} \\
+     \textbf{Front-end}{: React.js, React Hooks, React Router, Next.js, HTML5, CSS3 (responsive \& cross-browser)} \\
+     \textbf{Back-end \& APIs}{: Node.js, Flask, RESTful APIs, Asynchronous Programming} \\
+     \textbf{Testing}{: Jest, React Testing Library} \\
+     \textbf{CI/CD \& Cloud}{: Azure DevOps (Pipelines, Boards, Repos), Docker, GitHub Actions} \\
+     \textbf{Databases}{: MongoDB, Firebase, Redis} 
+    }}
+ \end{itemize}
+
+%---------- SOFT SKILLS ----------
+\section{Soft Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{Agile/Scrum Methodologies, Collaboration, Problem-Solving, Debugging, Code Reviews}}
+ \end{itemize}
+ 
+\end{document}
