@@ -107,42 +107,47 @@
 \section{Projects}
   \resumeSubHeadingListStart
   
-    % PROJECT 1: Final Year Portal - Best for: Web platforms, full-stack, large-scale systems
+    % PROJECT 1: Daily Ledger - Best for: Real-time collaboration, PWA, modern web stack, Firebase
     \resumeProjectHeading
-      {\textbf{\href{https://final-year-portal.vercel.app}{Final Year Project Management Portal}}}{Aug 2025 -- Present}
+      {\textbf{\href{https://github.com/190-785/Daily_Ledger}{Daily Ledger - Smart Collection Tracker}} $|$ \textit{React, Firebase, Vite, Tailwind}}{Jan 2025 -- Present}
       \resumeItemListStart
-        \resumeItem{\textbf{Tech Stack:} Next.js, Firebase, Tailwind CSS, Node.js}
+        \resumeItem{Built production-ready Progressive Web App (PWA) for real-time collection management with collaborative list sharing, offline support, and installable mobile experience. Deployed on Vercel with comprehensive Firebase security rules protecting user data and access control.}
+        \resumeItem{Implemented real-time collaboration system enabling users to share collection lists with granular permissions and instant synchronization across devices. Architected Firestore data model with owner-based access control, member management, and transaction tracking supporting concurrent multi-user editing.}
+        \resumeItem{\textbf{Outcome:} Achieved Lighthouse score of 90+ across all metrics with 208 KB gzipped bundle size. Engineered analytics dashboard with daily summaries, monthly targets, payment tracking, and Excel export functionality for data-driven decision making.}
+      \resumeItemListEnd
+  
+    % PROJECT 2: Final Year Portal - Best for: Web platforms, full-stack, large-scale systems
+    \resumeProjectHeading
+      {\textbf{\href{https://final-year-portal.vercel.app}{Final Year Project Management Portal}} $|$ \textit{Next.js, Firebase, Node.js, Tailwind}}{Aug 2025 -- Present}
+      \resumeItemListStart
         \resumeItem{Architected scalable backend infrastructure supporting 1,500+ concurrent users for university-wide final year project management system. Implemented complex data modeling for 400+ project teams with multi-phase workflow tracking and evaluation.}
         \resumeItem{Engineered multi-role access control system with distinct dashboards for students, administrators, faculty, panelists, and external reviewers. Integrated Firebase authentication with real-time email notification workflows.}
         \resumeItem{\textbf{Outcome:} Deployed production-ready platform scheduled for official university-wide adoption, streamlining project evaluation workflows and enabling automated meeting scheduling with team notifications. Platform scaling to 3,000+ users across multiple campuses starting 2026.}
       \resumeItemListEnd
       
-    % PROJECT 2: 3D Resume Builder - Best for: Creative roles, frontend-heavy, real-time features
+    % PROJECT 3: 3D Resume Builder - Best for: Creative roles, frontend-heavy, real-time features
     \resumeProjectHeading
-      {\textbf{\href{https://github.com/190-785/Interactive-Resume-Maker}{Interactive 3D Resume Builder}}}{Feb 2025 -- May 2025}
+      {\textbf{\href{https://github.com/190-785/Interactive-Resume-Maker}{Interactive 3D Resume Builder}} $|$ \textit{React, Three.js, MongoDB, Spring Boot}}{Feb 2025 -- May 2025}
       \resumeItemListStart
-        \resumeItem{\textbf{Tech Stack:} React, Three.js, MongoDB, Spring Boot, WebSockets}
         \resumeItem{Developed full-stack application visualizing resume data in an immersive 3D forest environment, offering unique and engaging user interface experience.}
         \resumeItem{Implemented secure JWT authentication, auto-save versioning, and real-time collaboration features using WebSockets, enabling seamless multi-user editing with conflict resolution.}
         \resumeItem{\textbf{Outcome:} Delivered highly interactive and personalized resume experience, increasing user engagement and providing novel alternative to traditional formats.}
       \resumeItemListEnd
       
-    % PROJECT 3: Wikipedia Path Finder - Best for: Algorithms, optimization, backend systems
+    % PROJECT 4: Wikipedia Path Finder - Best for: Algorithms, optimization, backend systems
     \resumeProjectHeading
-      {\textbf{\href{https://github.com/190-785/First_Link_Backend}{Wikipedia Path Finder}}}{Oct 2024 -- Dec 2024}
+      {\textbf{\href{https://github.com/190-785/First_Link_Backend}{Wikipedia Path Finder}} $|$ \textit{Python, Flask, BeautifulSoup, Redis, MongoDB, Docker}}{Oct 2024 -- Dec 2024}
       \resumeItemListStart
-        \resumeItem{\textbf{Tech Stack:} Python, Flask, BeautifulSoup, Redis, MongoDB, Docker}
         \resumeItem{Developed distributed backend service tracing traversal path from given Wikipedia page to 'Philosophy' page by recursively clicking first link, implementing intelligent loop detection and dead-end handling.}
         \resumeItem{Implemented two-tier caching strategy utilizing Redis for frequent paths and Docker containerization, ensuring horizontal scalability and faster response times under load.}
         \resumeItem{\textbf{Outcome:} Achieved 80\% reduction in pathfinding and parsing runtime through optimization, significantly lowering infrastructure costs and improving user experience.}
       \resumeItemListEnd
       
-    % PROJECT 4: IoT Plant Watering System - Best for: IoT roles, embedded systems, hardware integration
+    % PROJECT 5: IoT Plant Watering System - Best for: IoT roles, embedded systems, hardware integration
     % COMMENT OUT for most software engineering roles, UNCOMMENT for IoT/hardware positions
     % \resumeProjectHeading
-    %   {\textbf{\href{https://github.com/190-785/Plant_Watering_System}{IoT Automatic Plant Watering System with Web Dashboard}}}{Jun 2025 -- Jul 2025}
+    %   {\textbf{\href{https://github.com/190-785/Plant_Watering_System}{IoT Automatic Plant Watering System}} $|$ \textit{ESP8266, Firebase, React, C++}}{Jun 2025 -- Jul 2025}
     %   \resumeItemListStart
-    %     \resumeItem{\textbf{Tech Stack:} ESP8266, Firebase, React, ESPAsyncWebServer, C++}
     %     \resumeItem{Designed and built autonomous IoT system monitoring soil moisture and dispensing water, fully integrated with cloud backend and real-time web dashboard at \href{https://bloomwatch-webapp.vercel.app}{\textbf{bloomwatch-webapp.vercel.app}} for remote monitoring and control.}
     %     \resumeItem{Engineered secure Wi-Fi configuration portal and implemented token-based Firebase authentication, enabling users to adjust moisture thresholds, watering cycles, and manually trigger pumps with safety features through interactive dashboard displaying real-time telemetry graphs.}
     %     \resumeItem{\textbf{Outcome:} Improved water conservation and plant health with 20\% increase in watering efficiency; preparing for commercial launch with modular hardware design for scalability.}
@@ -156,8 +161,8 @@
     \small{\item{
      \textbf{Languages}{: Java, Python, JavaScript, TypeScript, C++} \\
      \textbf{Frameworks}{: React, Next.js, Node.js, Flask, Spring Boot} \\
-     \textbf{Databases \& Storage}{: MongoDB, Firebase, Redis} \\
-     \textbf{Developer Tools}{: Git, Docker, BeautifulSoup, Postman} \\
+     \textbf{Databases \& Storage}{: MongoDB, Firebase, Redis, PostgreSQL} \\
+     \textbf{Developer Tools}{: Git, Docker, Vite, BeautifulSoup, Postman, WebSockets} \\
      \textbf{Machine Learning}{: Matplotlib, scikit-learn, TensorFlow, Keras}
     }}
  \end{itemize}
@@ -165,7 +170,7 @@
 %---------- SOFT SKILLS ----------
 \section{Soft Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{Agile Collaboration, Problem-solving, Communication, Teamwork}}
+    \small{\item{Problem-Solving, Cross-Functional Collaboration, Agile Development, Technical Communication}}
  \end{itemize}
 
 %-------------------------------------------
@@ -174,29 +179,40 @@
 % 
 % TAILORING YOUR RESUME FOR SPECIFIC ROLES:
 % 
-% 1. WEB/MOBILE PLATFORMS (Meta, Google, Microsoft):
-%    Include: Final Year Portal, 3D Resume Builder, Wikipedia Path Finder
+% 1. REAL-TIME COLLABORATION / MODERN WEB (Notion, Figma, Miro):
+%    Include: Daily Ledger, Final Year Portal, 3D Resume Builder
+%    Focus: Real-time sync, PWA, collaborative features, Firebase
+% 
+% 2. WEB/MOBILE PLATFORMS (Meta, Google, Microsoft):
+%    Include: Final Year Portal, Daily Ledger, 3D Resume Builder
 %    Focus: Scale, modern frameworks, full-stack
 % 
-% 2. BACKEND/INFRASTRUCTURE (Amazon, Netflix):
-%    Include: Wikipedia Path Finder, Final Year Portal, 3D Resume Builder
+% 3. BACKEND/INFRASTRUCTURE (Amazon, Netflix):
+%    Include: Wikipedia Path Finder, Final Year Portal, Daily Ledger
 %    Focus: Optimization, caching, scalability
 % 
-% 3. FRONTEND/UI HEAVY (Figma, Adobe, Spotify):
-%    Include: 3D Resume Builder, Final Year Portal, Wikipedia Path Finder
-%    Focus: User experience, modern UI libraries
+% 4. FRONTEND/UI HEAVY (Adobe, Spotify, Airbnb):
+%    Include: 3D Resume Builder, Daily Ledger, Final Year Portal
+%    Focus: User experience, modern UI libraries, PWA
 % 
-% 4. ALGORITHMS/RESEARCH (DeepMind, OpenAI):
+% 5. ALGORITHMS/RESEARCH (DeepMind, OpenAI):
 %    Include: Wikipedia Path Finder, Final Year Portal, 3D Resume Builder
 %    Focus: Optimization metrics, problem-solving
 % 
-% 5. IoT/HARDWARE (Tesla, Apple Hardware):
-%    Include: IoT Plant Watering, Final Year Portal, Wikipedia Path Finder
+% 6. IoT/HARDWARE (Tesla, Apple Hardware):
+%    Include: IoT Plant Watering, Daily Ledger, Final Year Portal
 %    Uncomment the IoT project section above
 % 
-% 6. STARTUPS (Early-stage, Full-stack):
-%    Include: All 4 projects if space permits
+% 7. STARTUPS (Early-stage, Full-stack):
+%    Include: All 4-5 projects if space permits
 %    Shows versatility across hardware and software
+% 
+% KEY PROJECT STRENGTHS:
+% - Daily Ledger: Real-time collaboration, PWA, Firebase, modern web
+% - Final Year Portal: Scale, multi-role systems, production deployment
+% - 3D Resume Builder: Creative problem-solving, WebSockets, Three.js
+% - Wikipedia Path Finder: Algorithms, optimization, distributed systems
+% - IoT Plant Watering: Hardware integration, full-stack IoT
 % 
 %-------------------------------------------
 

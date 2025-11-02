@@ -1,0 +1,154 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Yash Agarwal
+% Tailored for: Notion Software Engineering Internship
+% Template Based on: sb2nov/resume (MIT License)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----- FORMATTING & MARGINS -----
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%----- SECTION FORMATTING -----
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%----- ATS COMPATIBILITY -----
+\pdfgentounicode=1
+
+%----- CUSTOM COMMANDS -----
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2}
+    \end{tabular*}\vspace{-3pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%
+%-------------------------------------------
+
+\begin{document}
+
+%---------- HEADING ----------
+\begin{center}
+    \textbf{\Huge \scshape Yash Agarwal} \\ \vspace{1pt}
+    \small Full-Stack Software Engineer \\ \vspace{1pt}
+    \small +91 9027601476 $|$ \href{mailto:190e785@gmail.com}{190e785@gmail.com} $|$
+    \href{https://in.linkedin.com/in/yash-agarwal-190e785}{\underline{linkedin.com/in/yash-agarwal-190e785}} $|$
+    \href{https://github.com/190-785}{\underline{github.com/190-785}}
+\end{center}
+
+%---------- EDUCATION ----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Graphic Era Hill University}{Uttarakhand, India}
+      {B.Tech. in Computer Science \& Engineering; Honors in ML \& AI}{\textit{\small Aug 2023 -- July 2027}}
+  \resumeSubHeadingListEnd
+
+%---------- EXPERIENCE ----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Full-Stack Web Developer Intern}{May 2025 -- July 2025}
+      {\href{https://drive.google.com/file/d/1yUwuZXi9aFgvmFDl0UV3BKAaYXMIYn_a/view?usp=sharing}{Arterns Technologies Private Limited}}{Dehradun, Uttarakhand}
+      \resumeItemListStart
+        \resumeItem{Developed backend infrastructure for Applicant Tracking System with automated resume parsing. Designed RESTful APIs and implemented Firebase database architecture with secure authentication using Node.js.}
+        \resumeItem{Engineered real-time communication system using Socket.io integrated with Firebase, enabling data synchronization across distributed clients with support for multiple concurrent connections.}
+        \resumeItem{Implemented internationalization across 8+ pages in Next.js, managing content delivery and locale-specific routing for corporate wellness platform.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%---------- PROJECTS ----------
+\section{Projects}
+  \resumeSubHeadingListStart
+  
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/190-785/Daily_Ledger}{Daily Ledger - Smart Collection Tracker}} $|$ \textit{React, Firebase, Vite, Tailwind}}{Oct 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Built production PWA for real-time collection management with collaborative list sharing and offline support. Implemented Firestore security rules with owner-based access control and server-side timestamp validation.}
+        \resumeItem{Architected real-time collaboration system enabling users to share lists with granular permissions and instant synchronization. Designed map-based data structure supporting efficient permission checks for concurrent multi-user editing.}
+        \resumeItem{Deployed on Vercel achieving 90+ Lighthouse score with 208 KB gzipped bundle. Engineered analytics dashboard with payment tracking and Excel export functionality.}
+      \resumeItemListEnd
+  
+    \resumeProjectHeading
+      {\textbf{\href{https://final-year-portal.vercel.app}{Final Year Project Management Portal}} $|$ \textit{Next.js, Firebase, Node.js, Tailwind}}{July 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Architected scalable backend supporting 1,500+ concurrent users for university-wide project management. Implemented complex data modeling for 400+ teams with multi-phase workflow tracking and evaluation criteria.}
+        \resumeItem{Engineered role-based access control with five permission levels. Integrated Firebase Authentication with custom claims and optimized schemas achieving sub-200ms API response times.}
+        \resumeItem{Deployed production system with automated email notifications and real-time synchronization. Scaling to 3,000+ users across multiple campuses starting 2026.}
+      \resumeItemListEnd
+      
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/190-785/Interactive-Resume-Maker}{Interactive 3D Resume Builder}} $|$ \textit{React, Three.js, MongoDB, Spring Boot}}{Feb 2025 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{Developed RESTful backend services using Spring Boot with MongoDB integration. Implemented JWT authentication, session management, and auto-save functionality with optimistic locking for concurrent editing.}
+        \resumeItem{Architected WebSocket infrastructure enabling real-time collaboration with conflict resolution and operational transformation, supporting synchronized multi-user editing with sub-second latency.}
+        \resumeItem{Optimized 3D rendering through efficient geometry batching, achieving 60 FPS on mid-range devices while maintaining accessibility features.}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+%---------- TECHNICAL SKILLS ----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, TypeScript, Python, Java, C++, SQL} \\
+     \textbf{Backend \& Frameworks}{: Node.js, Spring Boot, Flask, Express.js, RESTful APIs} \\
+     \textbf{Frontend}{: React, Next.js, Three.js, Tailwind CSS} \\
+     \textbf{Databases}{: Firebase Firestore, MongoDB, PostgreSQL, Redis} \\
+     \textbf{DevOps \& Tools}{: Git, Docker, Vite, Vercel, WebSockets, Socket.io, PWA}
+    }}
+ \end{itemize}
+ %---------- SOFT SKILLS ----------
+\section{Soft Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{Problem-Solving, Cross-Functional Collaboration, Agile Development, Technical Communication}}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
