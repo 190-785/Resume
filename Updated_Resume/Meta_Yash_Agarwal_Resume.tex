@@ -50,7 +50,7 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textit{\small #2} \\
+      \textbf{#1} & \textit{\small #2} \\ % Changed this line
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -94,7 +94,7 @@
       {Web Developer Intern}{May 2025 -- July 2025}
       {\href{https://drive.google.com/file/d/1yUwuZXi9aFgvmFDl0UV3BKAaYXMIYn_a/view?usp=sharing}{Arterns Technologies Private Limited}}{Dehradun, Uttarakhand}
       \resumeItemListStart
-        \resumeItem{Developed a full-stack Applicant Tracking System (ATS) with automated resume parsing and student assessment module for \href{https://menticate.com}{\textbf{menticate.com}}, building Node.js backend APIs with Firebase authentication and database integration.}
+        \resumeItem{Developed a full-stack Applicant Tracking System (ATS) with automated resume parsing and student assessment module for \href{https://menticate.com}{\textbf{menticate.com}}, building Node.js backend APIs with Firebase authentication and database.}
         \resumeItem{Integrated Socket.io and Firebase for real-time chat functionality, and architected a reusable theme system enabling seamless site-wide dark mode across multiple pages and components.}
         \resumeItem{Led the development of \href{https://we-are-on-leaf.vercel.app}{\textbf{we-are-on-leaf.vercel.app}} and implemented i18next internationalization across 8+ pages in \href{https://vedichealings.com}{\textbf{vedichealings.com}} Next.js codebase, delivering complete Spanish language support.}
         \resumeItem{Reduced project timeline overruns by 20\% by identifying and resolving critical API authentication issues and implementing proactive risk mitigation strategies in an Agile environment.}
@@ -102,12 +102,8 @@
   \resumeSubHeadingListEnd
 
 %---------- PROJECTS ----------
-%---------- INSTRUCTIONS: Uncomment/comment projects based on job requirements ----------
-%---------- Keep 3-4 most relevant projects per application ----------
 \section{Projects}
   \resumeSubHeadingListStart
-  
-    % PROJECT 1: Final Year Portal - Best for: Web platforms, full-stack, large-scale systems
     \resumeProjectHeading
       {\textbf{\href{https://final-year-portal.vercel.app}{Final Year Project Management Portal}}}{Aug 2025 -- Present}
       \resumeItemListStart
@@ -117,7 +113,6 @@
         \resumeItem{\textbf{Outcome:} Deployed production-ready platform scheduled for official university-wide adoption, streamlining project evaluation workflows and enabling faculty to schedule meetings with automated team notifications.}
       \resumeItemListEnd
       
-    % PROJECT 2: 3D Resume Builder - Best for: Creative roles, frontend-heavy, real-time features
     \resumeProjectHeading
       {\textbf{\href{https://github.com/190-785/Interactive-Resume-Maker}{Interactive 3D Resume Builder}}}{Feb 2025 -- May 2025}
       \resumeItemListStart
@@ -127,7 +122,6 @@
         \resumeItem{\textbf{Outcome:} Delivered a highly interactive and personalized resume experience, increasing user engagement and providing a novel alternative to traditional formats.}
       \resumeItemListEnd
       
-    % PROJECT 3: Wikipedia Path Finder - Best for: Algorithms, optimization, backend systems
     \resumeProjectHeading
       {\textbf{\href{https://github.com/190-785/First_Link_Backend}{Wikipedia Path Finder}}}{Oct 2024 -- Dec 2024}
       \resumeItemListStart
@@ -136,18 +130,6 @@
         \resumeItem{Integrated Redis caching to store frequent paths and Docker for containerization, ensuring scalability and faster response times under load.}
         \resumeItem{\textbf{Outcome:} Optimized pathfinding and parsing runtime by approximately 80\%, significantly lowering infrastructure costs and improving user experience.}
       \resumeItemListEnd
-      
-    % PROJECT 4: IoT Plant Watering System - Best for: IoT roles, embedded systems, hardware integration
-    % COMMENT OUT for most software engineering roles, UNCOMMENT for IoT/hardware positions
-    % \resumeProjectHeading
-    %   {\textbf{\href{https://github.com/190-785/Plant_Watering_System}{IoT Automatic Plant Watering System with Web Dashboard}}}{Jun 2025 -- Jul 2025}
-    %   \resumeItemListStart
-    %     \resumeItem{\textbf{Tech Stack:} ESP8266, Firebase, React, ESPAsyncWebServer, C++}
-    %     \resumeItem{Designed and built an autonomous IoT system to monitor soil moisture and dispense water, fully integrated with a cloud backend and real-time web dashboard at \href{https://bloomwatch-webapp.vercel.app}{\textbf{bloomwatch-webapp.vercel.app}} for remote monitoring and control.}
-    %     \resumeItem{Developed secure Wi-Fi configuration portal and implemented token-based Firebase authentication, enabling users to adjust moisture thresholds, watering cycles, and manually trigger pumps with safety features through an interactive dashboard displaying real-time telemetry graphs.}
-    %     \resumeItem{\textbf{Outcome:} Improved water conservation and plant health with 20\% increase in watering efficiency; preparing for commercial launch with modular hardware design for scalability.}
-    %   \resumeItemListEnd
-      
   \resumeSubHeadingListEnd
 
 %---------- TECHNICAL SKILLS ----------
@@ -157,47 +139,9 @@
      \textbf{Languages}{: Java, Python, JavaScript, TypeScript, C++} \\
      \textbf{Frameworks}{: React, Next.js, Node.js, Flask, Spring Boot} \\
      \textbf{Databases \& Storage}{: MongoDB, Firebase, Redis} \\
-     \textbf{Developer Tools}{: Git, Docker, BeautifulSoup, Postman} \\
-     \textbf{Machine Learning}{: Matplotlib, scikit-learn, TensorFlow, Keras}
+     \textbf{Developer Tools}{: Git, Docker, Postman} \\
+     \textbf{Machine Learning}{: scikit-learn, TensorFlow, Keras}
     }}
  \end{itemize}
-
-%---------- SOFT SKILLS ----------
-\section{Soft Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{Agile Collaboration, Problem-solving, Communication, Teamwork}}
- \end{itemize}
-
-%-------------------------------------------
-%%%%%%  CUSTOMIZATION GUIDE  %%%%%%%%%%%%%%%
-%-------------------------------------------
-% 
-% TAILORING YOUR RESUME FOR SPECIFIC ROLES:
-% 
-% 1. WEB/MOBILE PLATFORMS (Meta, Google, Microsoft):
-%    Include: Final Year Portal, 3D Resume Builder, Wikipedia Path Finder
-%    Focus: Scale, modern frameworks, full-stack
-% 
-% 2. BACKEND/INFRASTRUCTURE (Amazon, Netflix):
-%    Include: Wikipedia Path Finder, Final Year Portal, 3D Resume Builder
-%    Focus: Optimization, caching, scalability
-% 
-% 3. FRONTEND/UI HEAVY (Figma, Adobe, Spotify):
-%    Include: 3D Resume Builder, Final Year Portal, Wikipedia Path Finder
-%    Focus: User experience, modern UI libraries
-% 
-% 4. ALGORITHMS/RESEARCH (DeepMind, OpenAI):
-%    Include: Wikipedia Path Finder, Final Year Portal, 3D Resume Builder
-%    Focus: Optimization metrics, problem-solving
-% 
-% 5. IoT/HARDWARE (Tesla, Apple Hardware):
-%    Include: IoT Plant Watering, Final Year Portal, Wikipedia Path Finder
-%    Uncomment the IoT project section above
-% 
-% 6. STARTUPS (Early-stage, Full-stack):
-%    Include: All 4 projects if space permits
-%    Shows versatility across hardware and software
-% 
-%-------------------------------------------
 
 \end{document}
