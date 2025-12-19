@@ -1,0 +1,202 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Yash Agarwal
+% Template Based on: sb2nov/resume (MIT License)
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----- FORMATTING & MARGINS -----
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%----- SECTION FORMATTING -----
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%----- ATS COMPATIBILITY -----
+\pdfgentounicode=1
+
+%----- CUSTOM COMMANDS -----
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2}
+    \end{tabular*}\vspace{-3pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%
+%-------------------------------------------
+
+\begin{document}
+
+%---------- HEADING ----------
+\begin{center}
+    \textbf{\Huge \scshape Yash Agarwal} \\ \vspace{1pt}
+    \small +91 9027601476 $|$ \href{mailto:yash.agarwal1376@gmail.com}{yash.agarwal1376@gmail.com} $|$
+    \href{https://in.linkedin.com/in/yash-agarwal-190e785}{\underline{linkedin.com/in/yash-agarwal-190e785}} $|$
+    \href{https://github.com/190-785}{\underline{github.com/190-785}}
+\end{center}
+
+%---------- EDUCATION ----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Graphic Era Hill University}{Uttarakhand, India}
+      {B.Tech. in Computer Science \& Engineering; Honors in ML \& AI}{Aug 2023 -- Present}
+    \resumeSubheading
+      {St. Mary's School}{Uttarakhand, India}
+      { Intermediate (CBSE)}{Graduated: 2023}
+    \resumeSubheading
+      {St. Mary's School}{Uttarakhand, India}
+      {High School (CBSE)}{Graduated: 2021}
+  \resumeSubHeadingListEnd
+
+%---------- EXPERIENCE ----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Full-Stack Web Developer Intern}{May 2025 -- July 2025}
+      {\href{https://drive.google.com/file/d/1yUwuZXi9aFgvmFDl0UV3BKAaYXMIYn_a/view?usp=sharing}{Arterns Technologies Private Limited}}{Dehradun, Uttarakhand}
+      \resumeItemListStart
+        \resumeItem{Engineered real-time chat functionality using Socket.io integrated with Firebase, and architected reusable theme system enabling seamless site-wide dark mode across multiple pages and components.}
+        \resumeItem{Led development of \href{https://we-are-on-leaf.vercel.app}{\textbf{we-are-on-leaf.vercel.app}} and implemented i18next internationalization across 8+ pages in \href{https://vedichealings.com}{\textbf{vedichealings.com}} Next.js codebase, delivering complete Spanish language support.}
+        \resumeItem{Reduced project timeline overruns by 20\% by identifying and resolving critical API authentication issues, implementing proactive risk mitigation strategies in an Agile environment.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%---------- PROJECTS ----------
+%---------- INSTRUCTIONS: Uncomment/comment projects based on job requirements ----------
+%---------- Keep 3-4 most relevant projects per application ----------
+\section{Projects}
+  \resumeSubHeadingListStart
+  
+    % PROJECT 2: Final Year Portal - Best for: Web platforms, full-stack, large-scale systems
+    \resumeProjectHeading
+      {\textbf{\href{https://final-year-portal.vercel.app}{Final Year Project Management Portal}} $|$ \textit{Next.js, Firebase, Node.js, Tailwind}}{Aug 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Architected scalable backend infrastructure supporting 1,500+ concurrent users for university-wide final year project management system. Implemented complex data modeling for 400+ project teams with multi-phase workflow tracking and evaluation.}
+        \resumeItem{Engineered multi-role access control system with distinct dashboards for students, administrators, faculty, panelists, and external reviewers. Integrated Firebase authentication with real-time email notification workflows.}
+        \resumeItem{\textbf{Outcome:} Deployed production-ready platform scheduled for official university-wide adoption, streamlining project evaluation workflows and enabling automated meeting scheduling with team notifications. Platform scaling to 3,000+ users across multiple campuses starting 2026.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/190-785/Plant_Watering_System}{IoT Automatic Plant Watering System}} $|$ \textit{ESP8266, Firebase, React, C++}}{Jun 2025 -- Sep 2025}
+      \resumeItemListStart
+        \resumeItem{Designed and built autonomous IoT system monitoring soil moisture and dispensing water, fully integrated with cloud backend and real-time web dashboard at \href{https://bloomwatch-webapp.vercel.app}{\textbf{bloomwatch-webapp.vercel.app}} for remote monitoring and control.}
+        \resumeItem{Engineered secure Wi-Fi configuration portal and implemented token-based Firebase authentication, enabling users to adjust moisture thresholds, watering cycles, and manually trigger pumps with safety features through interactive dashboard displaying real-time telemetry graphs.}
+        \resumeItem{\textbf{Outcome:} Improved water conservation and plant health with 20\% increase in watering efficiency; preparing for commercial launch with modular hardware design for scalability.}
+      \resumeItemListEnd
+    % PROJECT 3: 3D Resume Builder - Best for: Creative roles, frontend-heavy, real-time features
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/190-785/Interactive-Resume-Maker}{Interactive 3D Resume Builder}} $|$ \textit{React, Three.js, MongoDB, Spring Boot}}{Feb 2025 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{Developed full-stack application visualizing resume data in an immersive 3D forest environment, offering unique and engaging user interface experience.}
+        \resumeItem{Implemented secure JWT authentication, auto-save versioning, and real-time collaboration features using WebSockets, enabling seamless multi-user editing with conflict resolution.}
+        \resumeItem{\textbf{Outcome:} Delivered highly interactive and personalized resume experience, increasing user engagement and providing novel alternative to traditional formats.}
+      \resumeItemListEnd
+      
+    % PROJECT 5: IoT Plant Watering System - Best for: IoT roles, embedded systems, hardware integration
+    % COMMENT OUT for most software engineering roles, UNCOMMENT for IoT/hardware positions
+
+      
+  \resumeSubHeadingListEnd
+
+%---------- TECHNICAL SKILLS ----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, JavaScript, TypeScript, C++} \\
+     \textbf{Frameworks}{: React, Next.js, Node.js, Flask, Spring Boot} \\
+     \textbf{Databases \& Storage}{: MongoDB, Firebase, Redis, PostgreSQL} \\
+     \textbf{Developer Tools}{: Git, Docker, Vite, BeautifulSoup, Postman, WebSockets} \\
+     \textbf{Machine Learning}{: Matplotlib, scikit-learn, TensorFlow, Keras}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+%%%%%%  CUSTOMIZATION GUIDE  %%%%%%%%%%%%%%%
+%-------------------------------------------
+% 
+% TAILORING YOUR RESUME FOR SPECIFIC ROLES:
+% 
+% 1. REAL-TIME COLLABORATION / MODERN WEB (Notion, Figma, Miro):
+%    Include: Daily Ledger, Final Year Portal, 3D Resume Builder
+%    Focus: Real-time sync, PWA, collaborative features, Firebase
+% 
+% 2. WEB/MOBILE PLATFORMS (Meta, Google, Microsoft):
+%    Include: Final Year Portal, Daily Ledger, 3D Resume Builder
+%    Focus: Scale, modern frameworks, full-stack
+% 
+% 3. BACKEND/INFRASTRUCTURE (Amazon, Netflix):
+%    Include: Wikipedia Path Finder, Final Year Portal, Daily Ledger
+%    Focus: Optimization, caching, scalability
+% 
+% 4. FRONTEND/UI HEAVY (Adobe, Spotify, Airbnb):
+%    Include: 3D Resume Builder, Daily Ledger, Final Year Portal
+%    Focus: User experience, modern UI libraries, PWA
+% 
+% 5. ALGORITHMS/RESEARCH (DeepMind, OpenAI):
+%    Include: Wikipedia Path Finder, Final Year Portal, 3D Resume Builder
+%    Focus: Optimization metrics, problem-solving
+% 
+% 6. IoT/HARDWARE (Tesla, Apple Hardware):
+%    Include: IoT Plant Watering, Daily Ledger, Final Year Portal
+%    Uncomment the IoT project section above
+% 
+% 7. STARTUPS (Early-stage, Full-stack):
+%    Include: All 4-5 projects if space permits
+%    Shows versatility across hardware and software
+% 
+% KEY PROJECT STRENGTHS:
+% - Daily Ledger: Real-time collaboration, PWA, Firebase, modern web
+% - Final Year Portal: Scale, multi-role systems, production deployment
+% - 3D Resume Builder: Creative problem-solving, WebSockets, Three.js
+% - Wikipedia Path Finder: Algorithms, optimization, distributed systems
+% - IoT Plant Watering: Hardware integration, full-stack IoT
+% 
+%-------------------------------------------
+
+\end{document}

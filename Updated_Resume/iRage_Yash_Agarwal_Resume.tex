@@ -1,0 +1,153 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Yash Agarwal
+% Targeted for: iRage (HFT/Quant)
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+%----- FORMATTING & MARGINS -----
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%----- SECTION FORMATTING -----
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%----- CUSTOM COMMANDS -----
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2}
+    \end{tabular*}\vspace{-3pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%---------- HEADING ----------
+\begin{center}
+    \textbf{\Huge \scshape Yash Agarwal} \\ \vspace{1pt}
+    \small +91 9027601476 $|$ \href{mailto:190e785@gmail.com}{190e785@gmail.com} $|$
+    \href{https://in.linkedin.com/in/yash-agarwal-190e785}{\underline{linkedin.com/in/yash-agarwal-190e785}} $|$
+    \href{https://github.com/190-785}{\underline{github.com/190-785}}
+\end{center}
+
+%---------- EDUCATION ----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Graphic Era Hill University}{Uttarakhand, India}
+      {B.Tech. in Computer Science \& Engineering; Honors in ML \& AI}{Aug 2023 -- July 2027}
+  \resumeSubHeadingListEnd
+
+%---------- TECHNICAL SKILLS ----------
+% Moved up for HFT relevance
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, Python, Java, JavaScript, TypeScript, SQL} \\
+     \textbf{Core Concepts}{: Data Structures \& Algorithms, OOPS, DBMS, Operating Systems, System Design} \\
+     \textbf{Technologies}{: Node.js, React, Redis, Firebase, Docker, MongoDB, Socket.io, Git} \\
+     \textbf{Libraries}{: STL (C++), NumPy, Pandas, Scikit-learn, BeautifulSoup}
+    }}
+ \end{itemize}
+
+%---------- EXPERIENCE ----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\href{https://drive.google.com/file/d/1OzMx9okAmp5j0GACBHkKpYvhwXmD1Dwg/view?usp=drive_link}{DataCulture Technologies Private Limited}}{New Delhi, India (Hybrid)}
+      {IoT \& Software Developer Intern}{May 2025 -- Nov 2025}
+      \resumeItemListStart
+        \resumeItem{Engineered firmware using \textbf{C++} for an automated irrigation system, optimizing sensor polling intervals to reduce power consumption while maintaining real-time data accuracy.}
+        \resumeItem{Developed a low-latency telemetry dashboard using React and Firebase, handling real-time state synchronization for remote hardware control and monitoring.}
+        \resumeItem{\textbf{Patent Filed:} Co-authored and filed a patent for the system's novel architectural approach to remote agricultural automation and water conservation.}
+        \resumeItem{\textbf{Performance:} Achieved "Exceeded Expectations" rating in Technical Competency and Deliverables. Commended for strong documentation practices and collaborative problem-solving.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://drive.google.com/file/d/1yUwuZXi9aFgvmFDl0UV3BKAaYXMIYn_a/view?usp=sharing}{Arterns Technologies Private Limited}}{Dehradun, Uttarakhand}
+      {Full-Stack Web Developer Intern}{May 2025 -- July 2025}
+      \resumeItemListStart
+        \resumeItem{Architected a scalable Applicant Tracking System (ATS) backend using Node.js; optimized API response times for parsing large volumes of resume data.}
+        \resumeItem{Implemented real-time bi-directional communication using \textbf{Socket.io}, enabling instant messaging and live status updates with minimal latency.}
+        \resumeItem{Refactored legacy codebases to support i18next internationalization, improving maintainability and extending platform reach to Spanish-speaking demographics.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%---------- PROJECTS ----------
+\section{Projects}
+  \resumeSubHeadingListStart
+   
+    % PROJECT 1: Best for HFT (Algorithms, Optimization, Caching)
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/190-785/First_Link_Backend}{Wikipedia Distributed Path Finder}} $|$ \textit{Python, Redis, Docker, Algorithms}}{Oct 2024 -- Dec 2024}
+      \resumeItemListStart
+        \resumeItem{Designed a graph traversal engine to trace paths between Wikipedia pages; implemented \textbf{intelligent loop detection} and dead-end handling algorithms to ensure traversal validity.}
+        \resumeItem{Engineered a two-tier caching layer using \textbf{Redis}, reducing redundant network requests and cutting average pathfinding runtime by \textbf{80\%}.}
+        \resumeItem{Containerized the application using Docker for consistent deployment and horizontal scalability across distributed environments.}
+      \resumeItemListEnd
+
+    % PROJECT 2: Best for Concurrency/Data Handling
+    \resumeProjectHeading
+      {\textbf{\href{https://github.com/190-785/Daily_Ledger}{Daily Ledger - Real-Time Transaction System}} $|$ \textit{React, Firebase, Logic}}{Jan 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Built a high-concurrency transaction tracking system supporting real-time collaborative editing. Implemented optimistic UI updates to mask network latency for a seamless user experience.}
+        \resumeItem{Designed a robust Firestore schema with granular security rules (Row Level Security equivalent) to handle multi-user permissions and secure concurrent writes.}
+        \resumeItem{Optimized bundle size to 208 KB (gzipped) achieving 90+ Lighthouse performance scores.}
+      \resumeItemListEnd
+   
+    % PROJECT 3: Best for Scale
+    \resumeProjectHeading
+      {\textbf{\href{https://final-year-portal.vercel.app}{University Project Management Portal}} $|$ \textit{Next.js, Node.js, System Design}}{Aug 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Architected a system supporting \textbf{1,500+ concurrent users} with role-based access control for students, faculty, and external auditors.}
+        \resumeItem{Modeled complex relationships for 400+ project teams, optimizing database queries to handle heavy read/write loads during submission deadlines.}
+        \resumeItem{Deployed production-ready infrastructure scheduled for campus-wide adoption in 2026.}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+\end{document}
