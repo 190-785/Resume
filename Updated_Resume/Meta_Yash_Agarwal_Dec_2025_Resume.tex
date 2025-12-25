@@ -131,27 +131,26 @@
       {Full-Stack / Product Engineer}{Aug 2025 -- Present}
       {Graphic Era Hill University (Campus Deployment)}{Dehradun, India}
       \resumeItemListStart
-        \resumeItem{Deployed a production portal supporting 1,600+ users (scaling to 4,000) using Next.js, React, and Firebase to centralize project submissions, mentorship requests, and panel evaluations.}
-        \resumeItem{Architected Firestore schemas with role-based access control (RBAC), atomic transactions for team creation, and immutable revision history to ensure data integrity and auditability.}
-        \resumeItem{Engineered real-time synchronization using efficient Firestore listeners and implemented conflict detection logic to prevent faculty from evaluating teams they mentor.}
+        \resumeItem{Led the system architecture and operational deployment of a production portal engineered for high availability and horizontal scaling to support 1,600+ users with planned scale to 4,000 users; focused on stateless service patterns and efficient data partitioning.}
+        \resumeItem{Architected Firestore data model with role-based access control, atomic transactions, composite indexes, and strict security rules; authored test suites using the Firestore emulator to validate rules and transactions.}
       \resumeItemListEnd
 
     \resumeSubheading
       {\href{https://drive.google.com/file/d/1OzMx9okAmp5j0GACBHkKpYvhwXmD1Dwg/view}{Software Engineering Intern (IoT \& Full-Stack)}}{May 2025 -- Nov 2025}
       {DataCulture Technologies Pvt. Ltd.}{Remote}
       \resumeItemListStart
-        \resumeItem{Engineered an end-to-end IoT irrigation system spanning embedded C++ firmware, cloud synchronization, and a Next.js web dashboard, earning ``Exceeded Expectations'' ratings.}
-        \resumeItem{Developed a responsive web dashboard for remote device configuration and live telemetry monitoring, implementing secure user authentication and device ownership mapping.}
-        \resumeItem{Designed deterministic state-driven control logic for hardware fault handling and co-authored a patent for the system's novel remote irrigation architecture.}
+        \resumeItem{Engineered an end-to-end IoT irrigation system spanning embedded C++ firmware, reliable cloud ingestion, and a Next.js dashboard; implemented token-based authentication and deterministic retry/backoff to ensure resilient telemetry ingestion.}
+        \resumeItem{Designed REST and WebSocket APIs for live telemetry and control, implemented client-side buffering and idempotent ingestion to tolerate intermittent connectivity, and established CI checks and integration tests for core flows.}
+        \resumeItem{Defined deterministic, state-driven control logic for hardware fault handling and safety interlocks; co-authored a patent application for the system architecture and remote control methodology.}
       \resumeItemListEnd
 
     \resumeSubheading
      {\href{https://drive.google.com/file/d/1yUwuZXi9aFgvmFDl0UV3BKAaYXMIYn_a/view}{Full Stack Developer Intern (Part-Time)}}{May 2025 -- July 2025}
       {Arterns Technologies Pvt. Ltd.}{Remote}
       \resumeItemListStart
-        \resumeItem{Delivered production frontends for multiple client websites including client projects such as Vedichealings and Menticate using Next.js and Tailwind CSS, handling i18n and responsiveness.}
-        \resumeItem{Built a real-time chat system for the Menticate platform using Socket.io and Firebase, integrating client-side state management to improve user engagement.}
-        \resumeItem{Managed end-to-end delivery including frontend implementation, lightweight backend integration, and Vercel deployments, ensuring consistent authentication flows.}
+        \resumeItem{Delivered production frontends with performance and accessibility in mind using Next.js and Tailwind; implemented server-side rendering and client hydration strategies to improve perceived load times.}
+        \resumeItem{Built a horizontally scalable real-time chat system using Socket.io and Firebase, with message ordering, reconnection handling, and backpressure controls to maintain correctness under load.}
+        \resumeItem{Managed end-to-end delivery including automated deployments on Vercel, lightweight backend integrations, and consistent authentication flows verified through integration tests.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -163,17 +162,17 @@
       \resumeProjectHeading
           {\textbf{\href{https://github.com/190-785/Interactive-Resume-Maker}{Interactive 3D Portfolio}} $|$ \emph{React, Three.js, Spring Boot, MongoDB}}{Feb 2025 -- May 2025}
           \resumeItemListStart
-            \resumeItem{Engineered an immersive 3D driving experience using Three.js with Ackermann-like steering physics, collision handling, and implemented a drag-and-drop content management system (CMS) for live content editing.}
-            \resumeItem{Designed a Spring Boot REST API backend with JWT-secured CRUD operations to manage resume data and bind it dynamically to 3D surfaces.}
-            \resumeItem{Optimized asset orchestration and startup sequencing to ensure optimized rendering performance.}
+            \resumeItem{Developed an immersive 3D experience using Three.js, optimizing scene graph design, GPU instancing, and texture atlasing to reduce draw calls and frame stalls.}
+            \resumeItem{Designed a Spring Boot REST API backend with JWT-secured CRUD operations and rate-limited endpoints; structured APIs for predictable latency under client load.}
+            \resumeItem{Optimized asset orchestration, lazy loading, and startup sequencing to improve initial render times and overall runtime performance.}
           \resumeItemListEnd
           
       \resumeProjectHeading
           {\textbf{\href{https://github.com/190-785/Daily-Ledger}{Real-time Community Finance Tracker}} $|$ \emph{React PWA, Firestore, Tailwind}}{Oct 2025 -- Present}
           \resumeItemListStart
-            \resumeItem{Built an offline-first Progressive Web App (PWA) using service workers and persistent storage, leveraging Firestore onSnapshot listeners for instant cross-client synchronization.}
-            \resumeItem{Designed granular security rules and server-time validations to enforce RBAC, while modeling idempotent ledger entries to support partial payments and historical backfills.}
-            \resumeItem{Implemented an in-browser SheetJS export engine for generating auditable month-wise financial reports and member statements.}
+            \resumeItem{Built an offline-first Progressive Web App using service workers and local persistence to ensure reliable writes while offline and correct sync on reconnect.}
+            \resumeItem{Designed Firestore data model and security rules to enforce RBAC and ensure idempotent ledger entries; implemented transactions and optimistic concurrency control for consistent financial state.}
+            \resumeItem{Implemented an in-browser SheetJS export engine and automated reporting tools to produce auditable monthly reports and to simplify reconciliations.}
           \resumeItemListEnd
 
       % \resumeProjectHeading
@@ -185,19 +184,17 @@
       %     \resumeItemListEnd
     \resumeSubHeadingListEnd
 
-
-
-%
 %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: JavaScript (ES6+), TypeScript, Python, Java, C++ (Embedded), SQL, HTML/CSS} \\
-     \textbf{Frontend}{: React, Next.js (App Router), Tailwind CSS v4, ShadCN UI, Three.js, Vite} \\
-     \textbf{Backend \& Cloud}{: Node.js, Express, Firebase (Auth/Firestore), Spring Boot, MongoDB, Docker, Vercel} \\
-     \textbf{Tools \& Automation}{: Git, GitHub, Selenium WebDriver, PlatformIO, Gunicorn, Postman}
+     \textbf{Languages}{: JavaScript (ES6+), TypeScript, Python, Java, C++, SQL} \\
+     \textbf{Frontend}{: React, Next.js, Tailwind CSS, Three.js, Vite} \\
+     \textbf{Backend \& Cloud}{: Node.js, Express, Spring Boot, Firebase (Auth/Firestore), MongoDB, Redis, Docker} \\
+     \textbf{Tools}{: Git, GitHub Actions, Docker Compose, Selenium, PlatformIO, Postman}
     }}
  \end{itemize}
+
 
 %-------------------------------------------
 \end{document}
