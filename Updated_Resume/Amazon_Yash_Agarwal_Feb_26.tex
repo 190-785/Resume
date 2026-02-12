@@ -1,0 +1,206 @@
+%-------------------------
+% Resume in Latex
+% Author: Jake Gutierrez
+% Based on: https://github.com/sb2nov/resume
+% License : MIT
+% Modified: AlgoUniversity Margins + Jake Styling
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\setlength{\footskip}{4.08003pt}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%-------------------------------------------
+% 1-> ALGOUNIVERSITY MARGINS APPLIED HERE
+% These values make the text area significantly wider and taller
+%-------------------------------------------
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting (2-> Jake's Styling: Black, Standard Weight)
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine-readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands (3-> Jake's Alignment: 0.97 width, 0.15in margin)
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% --- NEW COMMAND FOR PROJECT WITH GUIDE NAME ---
+\newcommand{\resumeProjectHeadingGuide}[3]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+      \small{Supervisor: \textit{#3}} & \\
+    \end{tabular*}\vspace{-7pt}
+}
+% -----------------------------------------------
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\fontsize{26}{32}\selectfont \scshape Yash Agarwal} \\ \vspace{1pt}
+    \small +91 9027601476 $|$ \href{mailto:yashagarwal1769@gmail.com}{\underline{yashagarwal1769@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/yash-agarwal-dev/}{\underline{linkedin.com/in/yash-agarwal-dev}} $|$
+    \href{https://github.com/190-785}{\underline{github.com/190-785}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Academic Details}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Graphic Era Hill University}{Dehradun, Uttarakhand}
+      {Bachelor of Technology in Computer Science \& Engineering}{Aug 2023 -- Present}
+    \resumeSubheading
+      {St. Mary's School}{Kashipur, Uttarakhand}
+      {Intermediate, CBSE}{2023}
+    \resumeSubheading
+      {St. Mary's School}{Kashipur, Uttarakhand}
+      {High School, CBSE}{2021}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeadingGuide
+          {\href{https://github.com/190-785/Interactive-Resume-Maker}{\textbf{Interactive Resume Maker}} $|$ \emph{Spring Boot, React, Three.js, MongoDB}}{Feb 2025 -- May 2025}
+          {Prof. (Dr.) Prateek Shrivastava}
+          \resumeItemListStart
+            \resumeItem{Developed an immersive application to visualise user resumes in a 3D forest environment using Three.js.}
+            \resumeItem{Created a secure backend using Spring Boot and Java 17, implementing JSON Web Tokens (JWT) \& BCrypt for authentication.}
+            \resumeItem{Engineered RESTful APIs to manage user sessions and fetch resume data from MongoDB, enabling efficient data retrieval.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeadingGuide
+          {\href{https://github.com/190-785/youtube-language-drift}{\textbf{YouTube Language Drift}} $|$ \emph{Python, NLTK, Scikit-Learn, YouTube API}}{Jan 2026 -- Present}
+          {Prof. (Dr.) Susheela Dhaiya}
+          \resumeItemListStart
+            \resumeItem{Engineered a Natural Language Processing (NLP) pipeline to analyse linguistic evolution over the years, sampling 50 videos/year/creator to normalise bias across transcripts. }
+            \resumeItem{Measured vocabulary shifts by calculating the Type-Token Ratio for lexical analysis and measuring year-over-year deviations.}
+            \resumeItem{Analysed linguistic patterns using N-gram extraction and Jaccard similarity indices to identify trends using Matplotlib visualisation.}
+            \resumeItem{Designed a reproducible workflow with structured configurations and randomised selection to ensure consistent experimental results across multiple execution runs.}
+          \resumeItemListEnd
+        
+      \resumeProjectHeadingGuide
+          {\href{https://github.com/190-785/final-year-portal}{\textbf{Final Year Project Management Portal}} $|$ \emph{Next.js, Firebase, Tailwind CSS v4}}{Aug 2025 -- Feb 2026}
+          {Dr. Amit Gupta}
+          \resumeItemListStart
+            \resumeItem{Built a project management system using Next.js and Tailwind CSS for streamlining the workflow of students, faculty, external evaluators, and admin.}
+            \resumeItem{Designed a Role-Based Access Control system using Firebase Authentication, implementing read/write permissions using Firestore rules. }
+            \resumeItem{Implemented real-time data synchronisation using Firestore Listeners for instant updates for project submissions and faculty reviews.}
+            \resumeItem{Structured a NoSQL (Firestore) database for complex relationships between users, teams, panellists, and external evaluators.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeadingGuide
+          {\href{https://github.com/190-785/Plant_Watering_System}{\textbf{Smart Plant Watering System}} $|$ \emph{C++, Next.js, Firebase, IoT}}{June 2025 -- Aug 2025}
+          {Dr. Vikrant Sharma}
+          \resumeItemListStart
+            \resumeItem{Developed an automated IoT system using ESP8266 to monitor and control soil moisture in real time.}
+            \resumeItem{Built a web app using Next.js and Tailwind CSS for real-time data visualisation and remote control of the system.}
+            \resumeItem{Created a secure architecture using MAC-based device identification, where hardware synchronises state changes directly from Firestore to eliminate vulnerable inbound HTTP endpoints.}
+            \resumeItem{Implemented a captive portal for dynamic WiFi connection, enabling seamless device setup without the need for hardcoded credentials.}
+          \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, C++, Python, JavaScript (ES6+), SQL, HTML/CSS} \\
+     \textbf{Frameworks/Libraries}{: Spring Boot, React.js, Next.js, Three.js, Tailwind CSS v4, Flask, NLTK, Scikit-Learn} \\
+     \textbf{Databases}{: MongoDB, Firebase (Firestore, Realtime DB), MySQL} \\
+     \textbf{Tools}{: Git, Docker, Postman, Linux/Bash, Vercel, Arduino IDE} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
